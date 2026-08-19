@@ -1,0 +1,23 @@
+# NovaTech Electronics - Payment & Billing FAQ
+[FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
+
+1. Accepted Payment Methods
+NovaTech accepts the following secure payment options at checkout:
+- Major Credit & Debit Cards: Visa, MasterCard, American Express, Discover, and JCB.
+- Digital Wallets: Apple Pay, Google Pay, and PayPal.
+- NovaPay Installments (Powered by Klarna & Affirm): Split purchases between $100 and $3,000 into 4 interest-free bi-weekly payments (0% APR) or monthly financing up to 12 months with eligible credit approval.
+- NovaTech Store Gift Cards & Promotional Coupon Codes.
+
+2. Currency & Tax Calculation
+- All transactions on our primary store are processed in United States Dollars (USD).
+- Applicable state and local sales taxes are automatically calculated at checkout based on the shipping address destination.
+
+3. When Is Payment Charged?
+- For credit cards and digital wallets: An authorization hold is placed when the order is submitted, and the actual charge is captured when the product ships from the warehouse.
+- For PayPal and NovaPay installment plans: Funds are debited immediately according to the third-party provider agreement.
+
+4. Billing Address Discrepancies
+To prevent credit card fraud, the billing address entered at checkout MUST match the billing address on file with your issuing bank. Mismatched addresses will cause the transaction to fail and the authorization hold to release within 2 to 5 business days.
+
+5. Invoice & Receipt Copies
+Customers can download official PDF tax invoices directly from their NovaTech account dashboard under "Order History" or by contacting customer support with their order ID.

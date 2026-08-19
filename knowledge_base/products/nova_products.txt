@@ -1,0 +1,41 @@
+# NovaTech Electronics - Product Catalog & Specifications
+[FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
+
+1. NovaBook Pro 15 (Laptop)
+- Display: 15.6-inch OLED 4K (3840x2160), 120Hz refresh rate, 500 nits brightness.
+- Processor: Intel Core Ultra 9 / AMD Ryzen 9 8000 Series.
+- RAM: 32GB LPDDR5X (Soldered, non-upgradable).
+- Storage: 1TB NVMe PCIe 4.0 SSD (expandable via secondary M.2 slot).
+- Battery & Charging: 84Wh battery offering up to 11 hours of standard office use. Ships with a 100W USB-C GaN fast charger.
+- Ports: 2x Thunderbolt 4 / USB-C, 1x USB-A 3.2 Gen 2, 1x HDMI 2.1, 1x 3.5mm headphone jack, 1x full-size SD card reader.
+- Audio: Quad stereo speakers with Dolby Atmos support.
+- Operating System: Windows 11 Pro pre-installed.
+- Retail Price: $1,499.00 USD.
+
+2. NovaPhone X12 (Smartphone)
+- Display: 6.7-inch Super AMOLED Display, 1-120Hz LTPO adaptive refresh rate.
+- Processor: NovaSilicon Bionic Octa-core chipset.
+- Storage Options: 128GB, 256GB, 512GB (No MicroSD card slot).
+- Camera System: Triple camera setup: 50MP main sensor (OIS), 12MP ultra-wide, 10MP 3x telephoto zoom. Front camera: 32MP.
+- Battery & Charging: 4,800mAh battery supporting 45W wired charging and 15W wireless charging. Charger is NOT included in the retail box; USB-C to USB-C cable is included.
+- Water Resistance: IP68 rating (submersible up to 1.5 meters in freshwater for up to 30 minutes).
+- Operating System: NovaOS 14 (based on Android 14).
+- Retail Price: $799.00 USD (128GB), $899.00 USD (256GB), $999.00 USD (512GB).
+
+3. NovaSound ANC Elite (Wireless Over-Ear Headphones)
+- Audio Driver: 40mm Custom Titanium Dynamic Drivers.
+- Active Noise Cancellation: Hybrid Active Noise Cancellation with Transparency Mode and Wind Noise Reduction.
+- Battery Life: Up to 40 hours with ANC enabled; up to 55 hours with ANC disabled. Quick charge: 10 minutes of charging provides 5 hours of playback.
+- Connectivity: Bluetooth 5.3 with multipoint pairing (connect up to 2 devices simultaneously), 3.5mm auxiliary wired option.
+- Supported Codecs: LDAC, AAC, SBC.
+- Microphone: 6-mic array with AI beamforming voice isolation for phone calls.
+- Included in Box: NovaSound ANC Elite headphones, hard travel case, 3.5mm audio cable, USB-C to USB-A charging cable, airplane audio adapter.
+- Retail Price: $249.00 USD.
+
+4. NovaTab Ultra 11 (Tablet)
+- Display: 11-inch IPS LCD 2.8K resolution (2880x1800), 144Hz refresh rate, stylus pen support.
+- Processor: Snapdragon 8s Gen 3.
+- RAM & Storage: 8GB RAM + 128GB Storage, or 12GB RAM + 256GB Storage.
+- Battery: 8,600mAh with 33W fast charging.
+- Stylus & Keyboard: NovaPen Stylus is sold separately ($69.00). Magnetic Smart Folio Keyboard sold separately ($119.00).
+- Retail Price: $449.00 USD.

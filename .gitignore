@@ -1,0 +1,32 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Chroma vector database storage
+data/chroma/
+*.sqlite3
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

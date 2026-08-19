@@ -1,0 +1,26 @@
+# NovaTech Electronics - Shipping and Delivery Policy
+[FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
+
+1. Shipping Speeds & Rates (Domestic US)
+NovaTech ships to all 50 US states, Puerto Rico, and APO/FPO military addresses:
+- Standard Shipping (3 to 5 Business Days): $4.99 flat rate. FREE for all orders totaling $50.00 or more before taxes.
+- Express 2-Day Shipping (2 Business Days): $14.99 flat rate. Available for all contiguous US orders placed before 2:00 PM EST.
+- Overnight Priority Delivery (1 Business Day): $24.99 flat rate. Guaranteed next business day delivery for orders placed Monday through Thursday before 1:00 PM EST.
+
+2. Order Processing Cutoff Times
+- Orders placed Monday through Friday before 2:00 PM EST are processed and dispatched from our warehouse on the same business day.
+- Orders placed on weekends (Saturday, Sunday) or major federal holidays are processed on the following business day.
+
+3. International Shipping
+- NovaTech currently ships internationally to Canada, the United Kingdom, the European Union, Australia, and Japan.
+- International Standard Shipping takes 7 to 14 business days ($19.99 flat rate).
+- International Express Shipping takes 3 to 5 business days ($39.99 flat rate).
+- Customs duties, import taxes, and VAT are calculated and collected at checkout (DDP - Delivered Duty Paid), so no unexpected fees are charged upon delivery.
+
+4. Package Tracking & Signature Confirmation
+- Once an order departs our facility, a tracking number is automatically emailed to the customer.
+- Orders valued over $500.00 (such as NovaBook Pro laptops or NovaPhone purchases) require an adult signature upon delivery for fraud and theft prevention.
+
+5. Damaged, Lost, or Stolen Packages
+- If a package arrives visibly damaged, customers must report it to NovaTech Support within 48 hours of delivery with photographic evidence.
+- If tracking shows "Delivered" but the package cannot be found, customers should wait 24 hours (as carriers sometimes mark packages early), then contact NovaTech Support to open a carrier claim investigation.

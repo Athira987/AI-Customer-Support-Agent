@@ -1,0 +1,31 @@
+# NovaTech Electronics - Limited Hardware Warranty Policy
+[FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
+
+1. Standard Warranty Coverage
+NovaTech Electronics provides a limited hardware manufacturer warranty against defects in materials and workmanship under normal consumer use:
+- NovaBook Series Laptops: 1-Year Limited Hardware Warranty.
+- NovaPhone Series Smartphones: 1-Year Limited Hardware Warranty.
+- NovaSound ANC Headphones & Speakers: 2-Year Limited Manufacturer Warranty.
+- NovaTab Tablets & Official Accessories (NovaPen, Keyboards, Chargers): 1-Year Limited Warranty.
+- Replacement parts and repaired devices carry a 90-day warranty or the remainder of the original warranty period, whichever is longer.
+
+2. Rechargeable Battery Warranty
+Internal rechargeable lithium-ion batteries are warranted for a period of 1 Year from the date of original purchase. A battery is considered defective under warranty if its maximum charging capacity drops below 80% of its original rated capacity within the first 12 months under standard charging cycles.
+
+3. What Is NOT Covered (Warranty Exclusions)
+The limited warranty does NOT cover:
+- Accidental damage resulting from drops, crushing, impacts, liquid spills, or water submersion exceeding rated IP specifications.
+- Normal cosmetic wear and tear, including surface scratches, dents, or faded coatings.
+- Damage caused by using non-certified third-party charging bricks, ungrounded power outlets, or electrical surges.
+- Devices that have been opened, repaired, or modified by unauthorized third-party repair centers or uncertified technicians.
+- Software issues, malware infections, or custom ROM / bootloader firmware modifications.
+- Lost or stolen items.
+
+4. NovaCare Plus Extended Warranty
+Customers can purchase NovaCare Plus within 30 days of hardware purchase for extended protection:
+- Extends manufacturer warranty to 3 full years.
+- Includes up to 2 incidents of accidental damage protection per 12-month period ($49 deductible for screen repair, $99 deductible for full unit replacement).
+- 24/7 priority customer support line.
+
+5. How to File a Warranty Claim
+To file a warranty claim, the customer must present valid proof of purchase (invoice or order confirmation number) and serial number to NovaTech Support. NovaTech will either repair the defect, replace the product with a new or factory-refurbished unit, or refund the purchase amount if replacement is unavailable.

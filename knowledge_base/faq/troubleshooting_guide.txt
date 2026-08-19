@@ -1,0 +1,28 @@
+# NovaTech Electronics - Technical Support & Troubleshooting Guide
+[FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
+
+1. NovaPhone X12 Troubleshooting
+A. Device Is Unresponsive or Won't Turn On (Soft Reset):
+- Step 1: Connect the NovaPhone to the official 45W charger and wait at least 10 minutes to verify charging indicator light.
+- Step 2: Press and hold the Volume Down button and the Power Button simultaneously for 12 to 15 seconds until the NovaTech logo appears on the screen.
+- Step 3: Release both buttons and allow the operating system to complete its boot sequence.
+
+B. Fingerprint Sensor Not Recognizing:
+- Ensure the screen and your fingertip are dry and clean.
+- Go to Settings > Security > Biometrics > Fingerprint Unlock, delete the previous print, and re-register your fingerprint by rotating your thumb slightly between scans.
+
+2. NovaSound ANC Elite Headphones Troubleshooting
+A. Bluetooth Pairing Mode:
+- With the headphones powered OFF, press and hold the Power/Bluetooth button for 6 seconds until the LED light flashes rapidly in alternating Blue and White.
+- On your phone or computer, open Bluetooth settings and select "NovaSound ANC Elite".
+- If pairing fails, perform a Factory Reset: Press and hold the ANC button and Volume (+) button simultaneously for 8 seconds until the LED flashes Red 3 times.
+
+B. Noise Cancellation Seems Ineffective:
+- Ensure the ear cushion pads form a firm seal around your ears without hair or glasses frames breaking the acoustic seal.
+- Toggle the ANC button to switch from "Transparency Mode" to "Active Noise Cancelling (High)".
+
+3. NovaBook Pro 15 Troubleshooting
+A. Overheating or Excessive Fan Noise:
+- Check that the air intake vents on the bottom and rear exhaust vents are clear of dust and not blocked by soft bedding or pillows.
+- Open NovaTech Control Center app in Windows and switch performance profile from "Turbo Performance" to "Balanced" or "Silent Quiet Mode".
+- Update BIOS firmware from the official NovaTech Support driver portal.
