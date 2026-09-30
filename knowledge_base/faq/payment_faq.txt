@@ -3,21 +3,66 @@
 
 1. Accepted Payment Methods
 NovaTech accepts the following secure payment options at checkout:
-- Major Credit & Debit Cards: Visa, MasterCard, American Express, Discover, and JCB.
-- Digital Wallets: Apple Pay, Google Pay, and PayPal.
-- NovaPay Installments (Powered by Klarna & Affirm): Split purchases between $100 and $3,000 into 4 interest-free bi-weekly payments (0% APR) or monthly financing up to 12 months with eligible credit approval.
-- NovaTech Store Gift Cards & Promotional Coupon Codes.
 
-2. Currency & Tax Calculation
-- All transactions on our primary store are processed in United States Dollars (USD).
-- Applicable state and local sales taxes are automatically calculated at checkout based on the shipping address destination.
+a) Credit and Debit Cards:
+   - Accepted networks: Visa, MasterCard, American Express, Discover, and JCB.
+   - Both credit cards and debit cards with a Visa or MasterCard logo are accepted.
+   - Prepaid debit cards are accepted but not recommended for orders requiring a billing address match.
 
-3. When Is Payment Charged?
-- For credit cards and digital wallets: An authorization hold is placed when the order is submitted, and the actual charge is captured when the product ships from the warehouse.
-- For PayPal and NovaPay installment plans: Funds are debited immediately according to the third-party provider agreement.
+b) Digital Wallets:
+   - Apple Pay (available on Safari browser and iOS devices).
+   - Google Pay (available on Chrome browser and Android devices).
+   - PayPal (including PayPal Credit and PayPal Pay Later).
 
-4. Billing Address Discrepancies
-To prevent credit card fraud, the billing address entered at checkout MUST match the billing address on file with your issuing bank. Mismatched addresses will cause the transaction to fail and the authorization hold to release within 2 to 5 business days.
+c) NovaPay Installment Plans (Buy Now, Pay Later):
+   - Powered by Klarna and Affirm financing partners.
+   - Available for purchases between $100.00 and $3,000.00 USD.
+   - Option 1: Split into 4 interest-free bi-weekly payments (0% APR). No credit check required for most customers.
+   - Option 2: Monthly financing up to 12 months with eligible credit approval. APR varies based on creditworthiness.
+   - NovaPay installment plans are available to US residents only with a valid US billing address.
 
-5. Invoice & Receipt Copies
-Customers can download official PDF tax invoices directly from their NovaTech account dashboard under "Order History" or by contacting customer support with their order ID.
+d) NovaTech Store Gift Cards:
+   - Physical and digital gift cards accepted at checkout.
+   - Multiple gift cards can be combined in one order.
+   - Gift card balances do not expire.
+
+e) Promotional Coupon Codes:
+   - Enter coupon code at checkout in the "Promo Code" field before completing payment.
+   - Only one coupon code can be applied per order.
+   - Coupon codes cannot be combined with other promotional offers unless explicitly stated.
+
+2. Currencies and Tax
+- All transactions are processed in United States Dollars (USD) only.
+- NovaTech does not currently support payment in other currencies. International customers' banks will handle currency conversion at their standard exchange rate.
+- Applicable state and local sales taxes are automatically calculated at checkout based on the shipping address. Tax rates vary by state.
+- Tax-exempt organizations must contact NovaTech Support before placing the order to apply tax exemption. Tax cannot be refunded after an order is placed.
+
+3. When Is My Payment Charged?
+- Credit and Debit Cards: An authorization hold is placed on the card when the order is submitted. The actual charge is captured only when the product physically ships from the warehouse. If the order is cancelled before shipping, the authorization hold is released within 2 to 5 business days depending on your bank.
+- PayPal: Funds are debited from the PayPal account immediately upon order submission.
+- NovaPay Installments: The first installment payment is collected immediately. Subsequent payments follow the agreed schedule.
+- NovaTech Gift Cards: The gift card balance is deducted immediately upon order submission.
+
+4. Billing Address Verification
+- To prevent credit card fraud, the billing address entered at checkout must exactly match the billing address on file with your card-issuing bank.
+- If the addresses do not match, the transaction will be declined automatically. This is a security measure.
+- The authorization hold placed during a declined transaction will be automatically released within 2 to 5 business days. NovaTech does not manually release these holds.
+- Solution: Double-check your billing address in your bank's records, then retry the order with the correct address.
+
+5. Payment Security
+- NovaTech's checkout is PCI DSS Level 1 compliant — the highest level of payment security certification.
+- NovaTech does not store complete credit card numbers on its servers. All card data is tokenized and handled by our payment processor.
+- All checkout pages use SSL/TLS encryption (HTTPS).
+
+6. Invoice and Receipt
+- An order confirmation email with itemized receipt is automatically sent to the customer's email address upon successful order placement.
+- Official PDF tax invoices can be downloaded from your NovaTech account dashboard under "Order History > View Invoice."
+- If you cannot access your account, contact NovaTech Support with your order ID number to receive a copy via email.
+- Invoices are available for download for up to 7 years after purchase for tax and warranty purposes.
+
+7. Refunds to Original Payment Method
+- All approved refunds are returned to the original payment method used at checkout. NovaTech cannot redirect refunds to a different card or account.
+- Refund timeline: 5 to 7 business days after approval, depending on the bank or card issuer.
+- PayPal refunds: 1 to 3 business days.
+- Gift card refunds: Applied immediately as store credit.
+- If your original card is expired or cancelled, contact your bank — refunds still route to the underlying account number.

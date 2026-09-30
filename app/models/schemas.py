@@ -36,6 +36,16 @@ class ChatRequest(BaseModel):
         default_factory=list,
         description="Recent dialogue history for multi-turn context"
     )
+    category: Optional[str] = Field(
+        default=None,
+        description=(
+            "Selected support topic category for category-aware RAG retrieval. "
+            "Valid values: 'payment_faq', 'troubleshooting', 'returns_refunds', "
+            "'shipping', 'warranty', 'nova_products'. "
+            "When provided, retrieval is filtered to the matching knowledge-base source."
+        ),
+        examples=["warranty"]
+    )
 
     @field_validator("message")
     @classmethod

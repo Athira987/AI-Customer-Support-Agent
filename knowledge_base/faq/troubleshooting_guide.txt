@@ -2,27 +2,97 @@
 [FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
 
 1. NovaPhone X12 Troubleshooting
-A. Device Is Unresponsive or Won't Turn On (Soft Reset):
-- Step 1: Connect the NovaPhone to the official 45W charger and wait at least 10 minutes to verify charging indicator light.
-- Step 2: Press and hold the Volume Down button and the Power Button simultaneously for 12 to 15 seconds until the NovaTech logo appears on the screen.
-- Step 3: Release both buttons and allow the operating system to complete its boot sequence.
+
+A. Device Is Unresponsive or Won't Turn On (Soft Reset / Force Restart):
+   Step 1: Connect the NovaPhone X12 to the official 45W USB-C charger and wait at least 10 minutes.
+   Step 2: Check that the charging indicator LED on the bottom edge glows amber (charging) or green (fully charged).
+   Step 3: Press and hold the Volume Down button and the Power Button simultaneously for 12 to 15 seconds.
+   Step 4: Release both buttons when the NovaTech logo appears on screen.
+   Step 5: Allow the operating system to complete its full boot sequence (approximately 45 seconds).
+   If the device still does not turn on after these steps, contact NovaTech Support for a warranty assessment.
 
 B. Fingerprint Sensor Not Recognizing:
-- Ensure the screen and your fingertip are dry and clean.
-- Go to Settings > Security > Biometrics > Fingerprint Unlock, delete the previous print, and re-register your fingerprint by rotating your thumb slightly between scans.
+   - Ensure both the screen and your fingertip are completely dry and clean.
+   - Remove any screen protector, as thick or non-certified screen protectors can interfere with the under-display fingerprint sensor.
+   - Go to Settings > Security > Biometrics > Fingerprint Unlock.
+   - Delete all previously stored fingerprints.
+   - Re-register your fingerprint by rotating your thumb slightly between each scan to capture different angles.
+   - If the sensor still fails after re-registration, run a fingerprint hardware diagnostic from Settings > Device Care > Diagnostics > Fingerprint Test.
+
+C. Battery Draining Faster Than Expected:
+   - Go to Settings > Battery > Battery Usage to identify apps consuming excessive power.
+   - Disable 5G connectivity if not needed: Settings > Connections > Mobile Networks > Network Mode > 4G/LTE Only.
+   - Reduce screen brightness and enable Adaptive Brightness.
+   - Enable Power Saving Mode from Settings > Battery > Power Saving.
+   - If battery capacity has dropped significantly (below 80% capacity) within 12 months of purchase, this may qualify as a warranty defect. Contact NovaTech Support with proof of purchase.
+
+D. NovaPhone X12 Overheating:
+   - Remove any thick third-party case while charging, as it can trap heat.
+   - Avoid using the phone while it is wirelessly charging.
+   - Do not use the phone in direct sunlight or in temperatures above 35°C (95°F).
+   - If the phone feels extremely hot during normal use (not gaming or video), contact NovaTech Support.
 
 2. NovaSound ANC Elite Headphones Troubleshooting
-A. Bluetooth Pairing Mode:
-- With the headphones powered OFF, press and hold the Power/Bluetooth button for 6 seconds until the LED light flashes rapidly in alternating Blue and White.
-- On your phone or computer, open Bluetooth settings and select "NovaSound ANC Elite".
-- If pairing fails, perform a Factory Reset: Press and hold the ANC button and Volume (+) button simultaneously for 8 seconds until the LED flashes Red 3 times.
 
-B. Noise Cancellation Seems Ineffective:
-- Ensure the ear cushion pads form a firm seal around your ears without hair or glasses frames breaking the acoustic seal.
-- Toggle the ANC button to switch from "Transparency Mode" to "Active Noise Cancelling (High)".
+A. How to Enter Bluetooth Pairing Mode:
+   Step 1: Ensure the headphones are completely powered OFF.
+   Step 2: Press and hold the Power/Bluetooth button on the right ear cup for 6 seconds.
+   Step 3: The LED indicator will flash rapidly in alternating Blue and White, indicating pairing mode is active.
+   Step 4: On your phone or computer, open Bluetooth settings and select "NovaSound ANC Elite" from the list of available devices.
+   Step 5: Pairing is confirmed when the LED flashes Blue twice and you hear a chime tone.
+   Note: The headphones support multipoint pairing — they can be connected to 2 devices simultaneously (e.g., laptop and phone). To connect a second device, simply enable Bluetooth on the second device and select "NovaSound ANC Elite."
+
+B. How to Factory Reset NovaSound ANC Elite:
+   - Press and hold the ANC button and the Volume Up (+) button simultaneously for 8 seconds.
+   - The LED will flash Red 3 times, confirming a successful factory reset.
+   - All paired device history will be erased. You will need to re-pair your devices.
+
+C. Noise Cancellation Not Working Effectively:
+   - Ensure the ear cushion pads form a firm seal around your ears. Hair, glasses frames, or earrings breaking the acoustic seal will significantly reduce ANC effectiveness.
+   - Press the ANC button to confirm you are in "Active Noise Cancelling (High)" mode and not "Transparency Mode" or "ANC Off."
+   - Clean the microphone ports on the outer ear cups with a dry soft brush to remove dust or debris.
+   - Check for a firmware update in the NovaSound companion app.
+
+D. Headphones Won't Charge:
+   - Use only the USB-C to USB-A charging cable included in the box.
+   - Try a different USB power source (wall adapter vs. computer USB port).
+   - Clean the USB-C port gently with a dry toothpick to remove lint.
+   - If the LED does not show any charging indicator after 30 minutes connected to a known-working charger, contact NovaTech Support for a warranty assessment.
 
 3. NovaBook Pro 15 Troubleshooting
+
 A. Overheating or Excessive Fan Noise:
-- Check that the air intake vents on the bottom and rear exhaust vents are clear of dust and not blocked by soft bedding or pillows.
-- Open NovaTech Control Center app in Windows and switch performance profile from "Turbo Performance" to "Balanced" or "Silent Quiet Mode".
-- Update BIOS firmware from the official NovaTech Support driver portal.
+   Step 1: Ensure the air intake vents on the bottom panel and rear exhaust vents are completely unobstructed. Do not use the laptop on soft surfaces like beds, sofas, or pillows.
+   Step 2: Open the NovaTech Control Center application (found in the Windows system tray) and switch the performance profile from "Turbo Performance" to "Balanced" or "Silent Quiet Mode."
+   Step 3: Check for pending BIOS firmware and driver updates at the NovaTech Support driver portal (support.novatech.com/drivers) and install available updates.
+   Step 4: If excessive heat continues under light use (web browsing, documents), run a thermal diagnostic from NovaTech Control Center > Diagnostics > Thermal Test.
+
+B. Display Flickering or Brightness Issues:
+   - Update the Intel/AMD graphics driver from Device Manager or the NovaTech driver portal.
+   - Disable "Auto HDR" in Windows Settings > System > Display > HDR if it causes flickering.
+   - Right-click the desktop > Display Settings > Advanced Display > Verify refresh rate is set to 120Hz.
+   - If the screen flickers at all refresh rate settings with latest drivers installed, contact NovaTech Support for a display panel assessment.
+
+C. NovaBook Pro 15 Won't Wake from Sleep:
+   - Press the Power button briefly (do not hold it down, as holding 5+ seconds forces a hard shutdown).
+   - If unresponsive, hold the Power button for 10 seconds to force shutdown, then press it again to restart.
+   - Update the BIOS from the NovaTech driver portal, as sleep/wake issues are often resolved in BIOS updates.
+
+D. USB-C / Thunderbolt Port Not Working:
+   - Try a different USB-C cable. Not all USB-C cables support Thunderbolt 4 data transfer speeds.
+   - Connect to a different Thunderbolt 4 port (the NovaBook Pro 15 has 2 Thunderbolt 4 ports).
+   - Go to Device Manager > Universal Serial Bus Controllers and check for any error flags on Thunderbolt controllers.
+   - Reinstall the Thunderbolt driver from the NovaTech driver portal.
+
+4. NovaTab Ultra 11 Troubleshooting
+
+A. NovaPen Stylus Not Responding:
+   - Ensure the NovaPen is charged. Attach the NovaPen magnetically to the side charging strip of the NovaTab for at least 15 minutes.
+   - Remove and reattach the NovaPen to the charging strip to re-establish the magnetic connection.
+   - Go to Settings > Connected Devices > NovaPen and confirm it is recognized.
+   - If not recognized, detach and reattach the NovaPen, or try after a full NovaPen charge cycle.
+
+B. NovaTab Display Touch Not Responding:
+   - Restart the device by holding the Power button for 3 seconds and selecting Restart.
+   - Remove any screen protector that may not be compatible with capacitive touch.
+   - If specific areas of the screen are unresponsive, run a touch diagnostic: Settings > Device Care > Diagnostics > Touch Screen Test.

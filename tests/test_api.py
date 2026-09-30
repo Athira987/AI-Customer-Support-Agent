@@ -70,3 +70,67 @@ def test_chat_escalated_response(mock_process_chat):
     assert data["needs_escalation"] is True
     assert data["reason"] is not None
     assert len(data["sources"]) == 0
+
+
+def test_kb_status_endpoint():
+    """Verify /knowledge-base/status returns indexed chunks and local embedding model."""
+    response = client.get("/knowledge-base/status")
+    assert response.status_code == 200
+    data = response.json()
+    assert "collection_name" in data
+    assert "total_chunks_indexed" in data
+    assert "embedding_model" in data
+    assert data["embedding_model"] == "sentence-transformers/all-MiniLM-L6-v2"
+
+
+@patch("app.services.rag.RAGPipeline.process_chat")
+def test_chat_with_category_field(mock_process_chat):
+    """Verify /chat accepts a category field and forwards it to the RAG pipeline."""
+    mock_process_chat.return_value = SupportResponse(
+        answer="NovaBook Pro 15 comes with a 1-year limited hardware warranty.",
+        needs_escalation=False,
+        reason=None,
+        sources=[
+            SourceItem(
+                document="warranty_policy.txt",
+                category="policies",
+                page=1,
+                snippet="1-year limited hardware warranty for NovaBook Series laptops."
+            )
+        ]
+    )
+
+    response = client.post("/chat", json={
+        "message": "How long is the warranty on the NovaBook Pro?",
+        "category": "warranty"
+    })
+    assert response.status_code == 200
+    data = response.json()
+    assert data["needs_escalation"] is False
+    assert "warranty" in data["answer"].lower()
+
+    # Verify process_chat was called with a request containing the category field
+    called_request = mock_process_chat.call_args[0][0]
+    assert called_request.category == "warranty"
+    assert called_request.message == "How long is the warranty on the NovaBook Pro?"
+
+
+@patch("app.services.rag.RAGPipeline.process_chat")
+def test_chat_without_category_field(mock_process_chat):
+    """Verify /chat works normally when no category is provided (backwards compatibility)."""
+    mock_process_chat.return_value = SupportResponse(
+        answer="NovaTech offers a 30-day return window.",
+        needs_escalation=False,
+        reason=None,
+        sources=[]
+    )
+
+    response = client.post("/chat", json={"message": "What is the return policy?"})
+    assert response.status_code == 200
+    data = response.json()
+    assert data["needs_escalation"] is False
+
+    called_request = mock_process_chat.call_args[0][0]
+    assert called_request.category is None
+
+

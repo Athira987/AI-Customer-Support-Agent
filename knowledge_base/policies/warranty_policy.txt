@@ -1,31 +1,60 @@
 # NovaTech Electronics - Limited Hardware Warranty Policy
 [FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
 
-1. Standard Warranty Coverage
-NovaTech Electronics provides a limited hardware manufacturer warranty against defects in materials and workmanship under normal consumer use:
-- NovaBook Series Laptops: 1-Year Limited Hardware Warranty.
-- NovaPhone Series Smartphones: 1-Year Limited Hardware Warranty.
-- NovaSound ANC Headphones & Speakers: 2-Year Limited Manufacturer Warranty.
-- NovaTab Tablets & Official Accessories (NovaPen, Keyboards, Chargers): 1-Year Limited Warranty.
-- Replacement parts and repaired devices carry a 90-day warranty or the remainder of the original warranty period, whichever is longer.
+1. Standard Warranty Coverage Periods
+NovaTech Electronics provides a limited hardware manufacturer warranty against defects in materials and workmanship under normal consumer use. The warranty period begins on the original date of purchase (invoice date):
+
+- NovaBook Series Laptops (including NovaBook Pro 15, NovaBook Air 13): 1-Year Limited Hardware Warranty.
+- NovaPhone Series Smartphones (including NovaPhone X12, NovaPhone X12 Lite): 1-Year Limited Hardware Warranty.
+- NovaSound ANC Headphones and Speakers (including NovaSound ANC Elite, NovaSound ANC Go): 2-Year Limited Manufacturer Warranty.
+- NovaTab Tablets (including NovaTab Ultra 11): 1-Year Limited Hardware Warranty.
+- Official NovaTech Accessories (NovaPen Stylus, Magnetic Keyboard Folio, Official Chargers and Cables): 1-Year Limited Warranty.
+- Replacement parts and repaired devices: 90-day warranty or the remainder of the original warranty period, whichever is longer.
 
 2. Rechargeable Battery Warranty
-Internal rechargeable lithium-ion batteries are warranted for a period of 1 Year from the date of original purchase. A battery is considered defective under warranty if its maximum charging capacity drops below 80% of its original rated capacity within the first 12 months under standard charging cycles.
+Internal rechargeable lithium-ion batteries in all NovaTech devices are covered by a 1-Year battery warranty from the date of original purchase. A battery qualifies as defective under warranty if its maximum charging capacity drops below 80% of its original rated capacity within the first 12 months under standard charging cycles. Battery capacity degradation beyond 12 months, or caused by extreme heat, cold, or improper charging habits, is considered normal wear and is not covered.
 
-3. What Is NOT Covered (Warranty Exclusions)
-The limited warranty does NOT cover:
-- Accidental damage resulting from drops, crushing, impacts, liquid spills, or water submersion exceeding rated IP specifications.
-- Normal cosmetic wear and tear, including surface scratches, dents, or faded coatings.
-- Damage caused by using non-certified third-party charging bricks, ungrounded power outlets, or electrical surges.
-- Devices that have been opened, repaired, or modified by unauthorized third-party repair centers or uncertified technicians.
-- Software issues, malware infections, or custom ROM / bootloader firmware modifications.
-- Lost or stolen items.
+3. Warranty Claim Outcomes
+When a valid warranty claim is submitted and verified by NovaTech Support, NovaTech will take one of the following actions at its discretion:
+- Option A: Repair the defective unit free of charge.
+- Option B: Replace the defective unit with a new or certified factory-refurbished unit of the same model.
+- Option C: Issue a full refund of the original purchase price if neither repair nor replacement is available.
+The customer cannot choose the specific remedy; NovaTech Support determines the most appropriate resolution based on parts availability and device condition.
 
-4. NovaCare Plus Extended Warranty
-Customers can purchase NovaCare Plus within 30 days of hardware purchase for extended protection:
-- Extends manufacturer warranty to 3 full years.
-- Includes up to 2 incidents of accidental damage protection per 12-month period ($49 deductible for screen repair, $99 deductible for full unit replacement).
-- 24/7 priority customer support line.
+4. How to File a Warranty Claim — Step by Step
+Step 1: Locate your proof of purchase (order confirmation email or invoice PDF) and the device serial number (found in Settings > About Device, or on the original box label).
+Step 2: Contact NovaTech Support via novatech.com/support, email at warranty@novatech.com, or by phone.
+Step 3: Describe the defect clearly. NovaTech Support may ask for photos or videos of the issue.
+Step 4: If the claim is approved, you will receive instructions for shipping the device for repair or replacement.
+Step 5: NovaTech covers return shipping for all approved warranty claims using a prepaid shipping label.
 
-5. How to File a Warranty Claim
-To file a warranty claim, the customer must present valid proof of purchase (invoice or order confirmation number) and serial number to NovaTech Support. NovaTech will either repair the defect, replace the product with a new or factory-refurbished unit, or refund the purchase amount if replacement is unavailable.
+5. What Is NOT Covered (Warranty Exclusions)
+The limited warranty explicitly does NOT cover the following:
+- Accidental physical damage: drops, falls, crushing, cracking, or bending.
+- Liquid damage: spills, submersion, humidity exposure, or water ingress exceeding the device's rated IP specification.
+- Cosmetic wear and tear: surface scratches, scuffs, dents, paint fading, or worn coatings that do not affect functionality.
+- Damage from using non-certified third-party charging accessories, ungrounded power outlets, power surges, or lightning.
+- Damage from unauthorized repair: devices opened, repaired, or modified by any repair shop or technician not certified by NovaTech. This voids the warranty immediately.
+- Software issues: operating system corruption, malware, viruses, custom ROM installation, or bootloader unlocking.
+- Lost or stolen devices.
+- Consumables: accessories that naturally degrade over time, such as ear cushion pads, keyboard keycap coatings, and stylus pen tips.
+
+6. NovaCare Plus — Extended Accidental Damage Protection
+Customers can purchase NovaCare Plus within 30 days of the original hardware purchase date. NovaCare Plus is available for NovaBook, NovaPhone, NovaTab, and NovaSound products. Key benefits include:
+- Extends total coverage to 3 full years from the original purchase date.
+- Includes up to 2 incidents of accidental damage protection per 12-month period.
+  * Screen-only repair deductible: $49.00.
+  * Full unit replacement deductible: $99.00.
+- 24/7 priority support line with dedicated NovaCare specialists.
+- NovaCare Plus is non-transferable and tied to the specific device serial number.
+- NovaCare Plus cannot be purchased after 30 days from the original purchase date. No exceptions.
+
+7. Warranty Transferability
+The standard limited hardware warranty is tied to the device serial number, not the original purchaser. If the device is sold or gifted to a new owner, the remaining warranty period is transferable, provided the new owner can present the original proof of purchase and device serial number.
+
+8. Warranty Void Conditions
+The following actions permanently void the NovaTech warranty with no exceptions:
+- Opening the device casing or removing internal components without NovaTech authorization.
+- Installing unofficial firmware, custom ROM, or unlocking the bootloader.
+- Tampering with or removing the serial number label.
+- Damage caused by using counterfeit or uncertified accessories.

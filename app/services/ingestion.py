@@ -38,8 +38,8 @@ class IngestionService:
         chunk_size: Optional[int] = None,
         chunk_overlap: Optional[int] = None
     ):
-        self.chunk_size = chunk_size or settings.chunk_size
-        self.chunk_overlap = chunk_overlap or settings.chunk_overlap
+        self.chunk_size = chunk_size if chunk_size is not None else settings.chunk_size
+        self.chunk_overlap = chunk_overlap if chunk_overlap is not None else settings.chunk_overlap
 
     def extract_text_from_file(self, file_path: Path) -> List[Dict[str, Any]]:
         """
@@ -86,48 +86,106 @@ class IngestionService:
         cleaned = re.sub(r"\n\s*\n+", "\n\n", cleaned)
         return cleaned.strip()
 
-    def chunk_text(self, text: str, chunk_size: int, chunk_overlap: int) -> List[str]:
-        """
-        Chunk text into overlapping windows while respecting paragraph and sentence boundaries.
-        """
-        cleaned = self.clean_text(text)
-        if not cleaned:
-            return []
-
-        if len(cleaned) <= chunk_size:
-            return [cleaned]
-
+    def _fallback_window_chunk(self, text: str, chunk_size: int, chunk_overlap: int) -> List[str]:
+        """Sliding window fallback for individual sections exceeding the chunk size."""
         chunks = []
         start = 0
-        text_length = len(cleaned)
+        text_length = len(text)
 
         while start < text_length:
             end = start + chunk_size
 
             if end >= text_length:
-                chunks.append(cleaned[start:].strip())
+                chunk = text[start:].strip()
+                if chunk:
+                    chunks.append(chunk)
                 break
 
-            # Attempt to split at paragraph or sentence boundary near chunk_size
-            split_pos = cleaned.rfind("\n\n", start, end)
-            if split_pos == -1 or split_pos <= start:
-                split_pos = cleaned.rfind(". ", start, end)
+            search_start = max(start + (chunk_size // 2), start + 1)
+            split_pos = text.rfind("\n\n", search_start, end)
+            if split_pos == -1:
+                split_pos = text.rfind(". ", search_start, end)
                 if split_pos != -1:
                     split_pos += 1  # Include the period
-            if split_pos == -1 or split_pos <= start:
-                split_pos = cleaned.rfind(" ", start, end)
+            if split_pos == -1:
+                split_pos = text.rfind("\n", search_start, end)
+            if split_pos == -1:
+                split_pos = text.rfind(" ", search_start, end)
 
             if split_pos == -1 or split_pos <= start:
                 split_pos = end
 
-            chunk = cleaned[start:split_pos].strip()
+            chunk = text[start:split_pos].strip()
             if chunk:
                 chunks.append(chunk)
 
-            # Advance with overlap
-            start = max(start + 1, split_pos - chunk_overlap)
+            next_start = split_pos - chunk_overlap if chunk_overlap < (split_pos - start) else split_pos
+            if next_start <= start:
+                next_start = split_pos
+            start = next_start
 
         return chunks
+
+    def chunk_text(self, text: str, chunk_size: Optional[int] = None, chunk_overlap: Optional[int] = None) -> List[str]:
+        """
+        Chunk text into section-aware blocks with semantic title injection.
+        """
+        size = chunk_size if chunk_size is not None else self.chunk_size
+        overlap = chunk_overlap if chunk_overlap is not None else self.chunk_overlap
+
+        cleaned = self.clean_text(text)
+        if not cleaned:
+            return []
+
+        # Extract document title (first line if it starts with #)
+        title = ""
+        lines = cleaned.split("\n")
+        if lines and lines[0].strip().startswith("#"):
+            title = lines[0].strip()
+
+        if len(cleaned) <= size:
+            return [cleaned]
+
+        # Split logically by headers or double newlines
+        sections = [s.strip() for s in re.split(r"\n\s*\n", cleaned) if s.strip()]
+        chunks = []
+        current_group = []
+        current_len = 0
+        
+        # Account for title length in size limits
+        title_overhead = len(title) + 5 if title else 0
+
+        for sec in sections:
+            if len(sec) + title_overhead > size:
+                if current_group:
+                    chunks.append("\n\n".join(current_group))
+                    current_group = []
+                    current_len = 0
+                sub_chunks = self._fallback_window_chunk(sec, size - title_overhead, overlap)
+                chunks.extend(sub_chunks)
+            else:
+                added_len = len(sec) + (2 if current_group else 0)
+                if current_len + added_len + title_overhead <= size:
+                    current_group.append(sec)
+                    current_len += added_len
+                else:
+                    if current_group:
+                        chunks.append("\n\n".join(current_group))
+                    current_group = [sec]
+                    current_len = len(sec)
+
+        if current_group:
+            chunks.append("\n\n".join(current_group))
+
+        # Inject the title into every chunk that doesn't have it
+        final_chunks = []
+        for chunk in chunks:
+            if title and not chunk.startswith(title):
+                final_chunks.append(f"{title}\n...\n{chunk}")
+            else:
+                final_chunks.append(chunk)
+
+        return final_chunks
 
     def process_document(self, file_path: Path) -> List[DocumentChunk]:
         """Process a single document file into metadata-tagged DocumentChunks."""

@@ -1,4 +1,5 @@
 import logging
+import re
 from typing import List, Optional
 from app.models.schemas import SupportResponse, SourceItem
 from app.core.config import settings
@@ -19,21 +20,19 @@ class EscalationService:
         """
         Check for explicit customer requests to speak with a human agent or supervisor.
         """
+        if not user_message:
+            return None
+
         message_lower = user_message.lower().strip()
-        human_triggers = [
-            "speak to human",
-            "talk to human",
-            "speak with a person",
-            "talk to a person",
-            "human representative",
-            "live agent",
-            "speak to manager",
-            "transfer me to support agent",
-            "customer representative"
+        patterns = [
+            r"\b(speak|talk|chat|connect|transfer)\b.*?\b(human|person|agent|representative|manager|supervisor|operator|specialist)\b",
+            r"\b(human\s+agent|live\s+agent|human\s+representative|customer\s+representative|real\s+person|human\s+support|human\s+intervention)\b",
+            r"\b(want|need|like|get)\s+(a\s+)?(human|person|live\s+agent|real\s+person)\b",
         ]
-        for trigger in human_triggers:
-            if trigger in message_lower:
-                return f"Customer explicitly requested human intervention: '{trigger}'"
+        for pattern in patterns:
+            if re.search(pattern, message_lower):
+                return "Customer explicitly requested human intervention"
+
         return None
 
     @staticmethod

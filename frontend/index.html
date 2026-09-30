@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaTech Support AI — Customer Support Dashboard</title>
+  <meta name="description" content="AI-powered customer support dashboard for NovaTech Electronics. Get instant help with payments, troubleshooting, returns, shipping, warranty, and products." />
+  <meta name="theme-color" content="#f8f6f2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23721c32'/><path d='M16 6L7 11V21L16 26L25 21V11L16 6Z' stroke='white' stroke-width='2' fill='none'/></svg>" />
+  <!-- Critical CSS to prevent FOUC & enforce SVG dimensions -->
+  <style>
+    body { background-color: #f8f6f2; color: #1f1e20; margin: 0; }
+    .brand-logo { width: 34px !important; height: 34px !important; max-width: 34px !important; }
+    .welcome-icon-wrap svg { width: 64px !important; height: 64px !important; max-width: 64px !important; }
+    svg { display: block; max-width: 100%; }
+  </style>
+  <link rel="stylesheet" href="/style.css?v=3" />
+</head>
+<body>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <div class="app-shell">
+
+    <!-- ============================================================
+         LEFT SIDEBAR — Support Topics Navigation
+    ============================================================ -->
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Support topics">
+
+      <!-- Sidebar Brand -->
+      <div class="sidebar-brand">
+        <div class="brand-logo-wrap">
+          <svg class="brand-logo" width="34" height="34" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#721c32"/>
+            <path d="M16 6L7 11V21L16 26L25 21V11L16 6Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M16 6V26M7 11L25 21M25 11L7 21" stroke="white" stroke-width="1.2" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">NovaTech</span>
+          <span class="brand-sub">Support AI</span>
+        </div>
+        <!-- Mobile close button -->
+        <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- System Status -->
+      <div class="sidebar-status-row">
+        <div class="system-status-chip" id="systemStatusChip" title="Checking system status...">
+          <span class="status-dot"></span>
+          <span class="status-label" id="statusLabel">Connecting...</span>
+        </div>
+      </div>
+
+      <!-- Sidebar Section: Topics -->
+      <div class="sidebar-section">
+        <p class="sidebar-section-label">Support Topics</p>
+        <nav class="topic-nav" id="topicNav" role="list">
+
+          <button class="topic-item" id="topic-payment_faq" data-topic="payment_faq" role="listitem" aria-label="Payment FAQ support topic">
+            <span class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+              </svg>
+            </span>
+            <span class="topic-label">Payment FAQ</span>
+            <span class="topic-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+          </button>
+
+          <button class="topic-item" id="topic-troubleshooting" data-topic="troubleshooting" role="listitem" aria-label="Troubleshooting support topic">
+            <span class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+              </svg>
+            </span>
+            <span class="topic-label">Troubleshooting</span>
+            <span class="topic-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+          </button>
+
+          <button class="topic-item" id="topic-returns_refunds" data-topic="returns_refunds" role="listitem" aria-label="Returns and Refunds support topic">
+            <span class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.49"/>
+              </svg>
+            </span>
+            <span class="topic-label">Returns &amp; Refunds</span>
+            <span class="topic-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+          </button>
+
+          <button class="topic-item" id="topic-shipping" data-topic="shipping" role="listitem" aria-label="Shipping support topic">
+            <span class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </span>
+            <span class="topic-label">Shipping</span>
+            <span class="topic-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+          </button>
+
+          <button class="topic-item" id="topic-warranty" data-topic="warranty" role="listitem" aria-label="Warranty support topic">
+            <span class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </span>
+            <span class="topic-label">Warranty</span>
+            <span class="topic-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+          </button>
+
+          <button class="topic-item" id="topic-nova_products" data-topic="nova_products" role="listitem" aria-label="Nova Products support topic">
+            <span class="topic-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </span>
+            <span class="topic-label">Nova Products</span>
+            <span class="topic-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+          </button>
+
+        </nav>
+      </div>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <button class="sidebar-new-chat-btn" id="sidebarNewChatBtn" aria-label="Start a new chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            <line x1="12" y1="8" x2="12" y2="14"/><line x1="9" y1="11" x2="15" y2="11"/>
+          </svg>
+          <span>New Chat</span>
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- ============================================================
+         MAIN CONTENT AREA
+    ============================================================ -->
+    <div class="main-content">
+
+      <!-- Top Header Bar -->
+      <header class="app-header" role="banner">
+        <div class="header-left">
+          <!-- Mobile hamburger -->
+          <button class="header-menu-btn" id="sidebarToggleBtn" aria-label="Open support topics menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+
+          <!-- Breadcrumb: Brand > Topic -->
+          <nav class="header-breadcrumb" aria-label="Current support context">
+            <span class="breadcrumb-brand">NovaTech Support AI</span>
+            <span class="breadcrumb-sep" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </span>
+            <span class="breadcrumb-topic" id="headerTopicLabel" aria-live="polite">All Topics</span>
+          </nav>
+        </div>
+
+        <div class="header-right">
+          <button class="btn-new-chat" id="clearChatBtn" title="Start a new conversation" aria-label="Start new chat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.49"/>
+            </svg>
+            <span>New Chat</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- ============================================================
+           CHAT AREA
+      ============================================================ -->
+      <main class="chat-main" id="chatMain" role="main" aria-label="Chat conversation">
+        <div class="chat-feed" id="chatFeed">
+
+          <!-- Welcome / Landing State (shown before topic is selected) -->
+          <div class="welcome-state" id="welcomeState" aria-label="Welcome screen">
+            <div class="welcome-icon-wrap" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="48" height="48" rx="14" fill="#721c32"/>
+                <path d="M24 10L11 17V31L24 38L37 31V17L24 10Z" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M24 10V38M11 17L37 31M37 17L11 31" stroke="white" stroke-width="1.6" opacity="0.6"/>
+              </svg>
+            </div>
+            <h1 class="welcome-heading">How can we help?</h1>
+            <p class="welcome-sub">Choose a support topic to get started, or type your question below.</p>
+
+            <!-- Quick-pick topic cards on welcome screen -->
+            <div class="welcome-topic-grid" id="welcomeTopicGrid" aria-label="Quick topic selection">
+              <button class="welcome-topic-card" data-topic="payment_faq" aria-label="Payment FAQ">
+                <span class="wtc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+                  </svg>
+                </span>
+                <span class="wtc-label">Payment FAQ</span>
+              </button>
+              <button class="welcome-topic-card" data-topic="troubleshooting" aria-label="Troubleshooting">
+                <span class="wtc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                </span>
+                <span class="wtc-label">Troubleshooting</span>
+              </button>
+              <button class="welcome-topic-card" data-topic="returns_refunds" aria-label="Returns and Refunds">
+                <span class="wtc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.49"/>
+                  </svg>
+                </span>
+                <span class="wtc-label">Returns &amp; Refunds</span>
+              </button>
+              <button class="welcome-topic-card" data-topic="shipping" aria-label="Shipping">
+                <span class="wtc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                  </svg>
+                </span>
+                <span class="wtc-label">Shipping</span>
+              </button>
+              <button class="welcome-topic-card" data-topic="warranty" aria-label="Warranty">
+                <span class="wtc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </span>
+                <span class="wtc-label">Warranty</span>
+              </button>
+              <button class="welcome-topic-card" data-topic="nova_products" aria-label="Nova Products">
+                <span class="wtc-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                  </svg>
+                </span>
+                <span class="wtc-label">Nova Products</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Topic Context Card (shown when a topic is selected, before first message) -->
+          <div class="topic-context-card" id="topicContextCard" style="display:none;" aria-live="polite" aria-atomic="true">
+            <div class="tcc-header">
+              <span class="tcc-icon" id="tccIcon" aria-hidden="true"></span>
+              <div class="tcc-text">
+                <h2 class="tcc-title" id="tccTitle"></h2>
+                <p class="tcc-desc" id="tccDesc"></p>
+              </div>
+            </div>
+            <div class="tcc-suggestions">
+              <p class="tcc-suggestions-label">Suggested questions</p>
+              <div class="tcc-chips" id="tccChips" role="list" aria-label="Suggested questions for this topic"></div>
+            </div>
+          </div>
+
+          <!-- Chat messages are dynamically inserted here -->
+        </div>
+      </main>
+
+      <!-- ============================================================
+           CHAT INPUT FOOTER
+      ============================================================ -->
+      <footer class="chat-footer" role="contentinfo">
+        <div class="chat-input-wrap">
+          <form class="chat-form" id="chatForm" autocomplete="off">
+            <div class="input-row">
+              <div class="textarea-wrap">
+                <textarea
+                  class="chat-textarea"
+                  id="chatInput"
+                  placeholder="Ask a question…"
+                  rows="1"
+                  maxlength="2000"
+                  aria-label="Your message"
+                  aria-multiline="true"
+                ></textarea>
+              </div>
+              <button class="btn-send" id="sendBtn" type="submit" aria-label="Send message" title="Send (Enter)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="input-meta">
+              <span class="input-topic-badge" id="inputTopicBadge" style="display:none;" aria-live="polite"></span>
+              <span class="char-counter" id="charCounter" aria-live="polite">0 / 2000</span>
+            </div>
+          </form>
+        </div>
+        <p class="footer-note">NovaTech Support AI · Answers grounded in official documentation · <kbd>Enter</kbd> to send, <kbd>Shift+Enter</kbd> for new line</p>
+      </footer>
+
+    </div><!-- /.main-content -->
+  </div><!-- /.app-shell -->
+
+  <script src="/app.js?v=3"></script>
+</body>
+</html>

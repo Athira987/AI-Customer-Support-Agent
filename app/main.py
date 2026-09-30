@@ -3,6 +3,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from pathlib import Path
+from fastapi.staticfiles import StaticFiles
 from app.api.routes import router as api_router
 from app.core.config import settings
 
@@ -18,7 +20,7 @@ logger = logging.getLogger("novatech_support")
 async def lifespan(app: FastAPI):
     """Application startup and shutdown events."""
     logger.info("Initializing NovaTech AI Customer Support Agent...")
-    logger.info(f"LLM Model: {settings.openai_model} | Embedding Model: {settings.embedding_model}")
+    logger.info(f"LLM Model: {settings.ollama_model} | Embedding Model: {settings.embedding_model}")
     logger.info(f"Vector Store Directory: {settings.chroma_persist_directory}")
     yield
     logger.info("Shutting down NovaTech AI Customer Support Agent.")
@@ -37,13 +39,16 @@ app = FastAPI(
 )
 
 # Cross-Origin Resource Sharing (CORS) Middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+origins = [origin.strip() for origin in settings.cors_origins.split(",") if origin.strip()]
+
+if origins:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 
 @app.exception_handler(Exception)
@@ -56,8 +61,13 @@ async def global_exception_handler(request: Request, exc: Exception):
     )
 
 
-# Register API routes
+# Register API routes (must precede static mount so API endpoints take priority)
 app.include_router(api_router)
+
+# Mount static frontend directory
+FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
+if FRONTEND_DIR.exists():
+    app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")
 
 
 if __name__ == "__main__":

@@ -2,30 +2,67 @@
 [FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
 
 1. Standard Return Window
-NovaTech Electronics offers a 30-day standard return window for most hardware products starting from the exact date the shipment is delivered to the customer's address.
+NovaTech Electronics offers a 30-day standard return window for most hardware products, starting from the exact date the shipment is delivered to the customer's address. After 30 days from the delivery date, returns are no longer accepted unless the item is covered under warranty.
 
-2. Return Eligibility & Condition
-To qualify for a full refund:
+2. Return Eligibility & Condition Requirements
+To qualify for a return and refund, the following conditions must be met:
 - Items must be returned in their original packaging with all included accessories, documentation, power adapters, and cables.
-- The item must show no signs of physical abuse, water ingress, scratches, or cosmetic damage.
-- Customer must perform a factory reset and remove all personal accounts (Google Account, Apple ID, Windows PIN/Passwords) before returning smart devices.
+- The item must show no signs of physical abuse, liquid damage, unauthorized modifications, or cosmetic damage.
+- Smart devices must have a factory reset performed and all personal accounts removed (Google Account, Apple ID, Windows PIN/Password) before returning.
+- Items that do not meet these conditions may be subject to additional deductions or rejection of the return entirely.
 
-3. Restocking Fees & Deductions
-- Unopened items returned within 30 days: 100% full refund with $0 restocking fee.
-- Opened, non-defective items in working condition: Subject to a 10% restocking fee to cover inspection and repackaging.
-- Items missing original components or packaging: Subject to a deduction of up to 25% of the purchase price or rejection of the return.
+3. Return Outcomes & Refund Amounts
+The following table clearly outlines what the customer receives based on their return scenario:
 
-4. Non-Returnable Items (Final Sale)
-The following items cannot be returned or refunded once purchased:
-- Downloadable software licenses, digital gift cards, and extended warranty service plans.
-- In-ear earbuds (NovaBuds) once the hygiene security seal has been broken, unless proven defective upon arrival.
-- Customized or engraved devices.
+a) Unopened Item Returned Within 30 Days:
+   - Outcome: 100% full refund to the original payment method.
+   - Restocking Fee: $0.00 (zero).
+   - Return Shipping: Customer is responsible.
 
-5. Return Process & Shipping Labels
-- To initiate a return, customers must request a Return Merchandise Authorization (RMA) number through their online NovaTech account or by contacting support.
-- NovaTech provides a prepaid return shipping label for items that are defective on arrival (DOA) or damaged in transit.
-- For buyer's remorse returns (e.g., changed mind or wrong color chosen), the customer is responsible for return shipping costs ($8.99 flat deduction if using our prepaid label).
+b) Opened, Non-Defective Item in Working Condition Returned Within 30 Days:
+   - Outcome: Refund minus a 10% restocking fee. For example, a $249.00 item would receive a $224.10 refund.
+   - The 10% restocking fee covers inspection, cleaning, and repackaging costs.
+   - Return Shipping: Customer is responsible ($8.99 flat deduction if using our prepaid label, or customer arranges own carrier).
+   - No replacement is offered for buyer's remorse returns. The outcome is a partial refund only.
+
+c) Item Missing Original Components or Packaging:
+   - Outcome: Subject to an additional deduction of up to 25% of the purchase price, or the return may be rejected entirely at NovaTech's discretion.
+
+d) Defective on Arrival (DOA) — Item Stops Working Within 30 Days of Delivery Due to Manufacturing Defect:
+   - Outcome: Customer's choice of either a full refund (100%, no restocking fee) OR a free replacement unit shipped at no charge.
+   - Return Shipping: NovaTech provides a prepaid return shipping label at no cost to the customer.
+   - No restocking fee applies for DOA items.
+
+e) Item Damaged in Transit (Visibly Damaged Packaging or Product Upon Delivery):
+   - Outcome: Customer's choice of either a full refund (100%, no restocking fee) OR a free replacement unit shipped at no charge.
+   - Return Shipping: NovaTech provides a prepaid return shipping label at no cost to the customer.
+   - Customer must report transit damage to NovaTech Support within 48 hours of delivery with photographic evidence.
+   - The $8.99 buyer's remorse shipping deduction does NOT apply to damaged-in-transit or DOA cases.
+
+4. Non-Returnable Items (Final Sale — No Exceptions)
+The following items cannot be returned, exchanged, or refunded under any circumstances once purchased:
+- Downloadable software licenses and activation codes.
+- Digital gift cards and store credit vouchers.
+- Extended warranty service plans (NovaCare Plus).
+- NovaBuds in-ear earbuds once the hygiene security seal has been broken, unless proven defective on arrival.
+- Customized, engraved, or special-order devices.
+- Any item purchased as "Open Box" or "Refurbished" that was clearly labeled as final sale at time of purchase.
+
+5. Return Process — Step by Step
+Step 1: Log in to your NovaTech account at novatech.com/account or contact NovaTech Support.
+Step 2: Request a Return Merchandise Authorization (RMA) number. Returns without an RMA number will be refused at the warehouse.
+Step 3: Package the item securely in original packaging with all accessories.
+Step 4: Ship using the prepaid label (DOA/damaged cases) or your own carrier (buyer's remorse).
+Step 5: Once received at the warehouse, inspection takes 2 to 4 business days.
+Step 6: Upon approval, the refund is issued to the original payment method.
 
 6. Refund Timelines
-- Once the returned item is received at our logistics warehouse, inspection takes 2 to 4 business days.
-- Approved refunds are credited back to the original payment method within 5 to 7 business days depending on the customer's financial institution.
+- Inspection period after item is received at warehouse: 2 to 4 business days.
+- After approval, refund is credited to the original payment method within 5 to 7 business days, depending on the customer's bank or card issuer.
+- PayPal refunds may appear faster (1 to 3 business days).
+- Gift card refunds are applied immediately upon approval.
+- Total estimated time from return shipment arrival to refund receipt: 7 to 11 business days in most cases.
+
+7. Exchange Policy
+- NovaTech does not offer direct product exchanges. If a customer wants a different product, they must return the original (subject to applicable fees above) and place a new order separately.
+- The only exception is DOA or transit-damaged items, where a free replacement of the same model is offered.

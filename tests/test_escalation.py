@@ -14,6 +14,13 @@ def test_pre_retrieval_human_trigger():
     reason3 = EscalationService.should_escalate_pre_retrieval("What is the battery life of NovaBook Pro?")
     assert reason3 is None
 
+    reason4 = EscalationService.should_escalate_pre_retrieval("I want to speak to a human agent.")
+    assert reason4 == "Customer explicitly requested human intervention"
+
+    response4 = EscalationService.build_escalation_response(reason=reason4)
+    assert response4.needs_escalation is True
+    assert response4.reason == "Customer explicitly requested human intervention"
+
 
 def test_distance_threshold_escalation():
     """Verify distance check escalates when retrieved content is dissimilar."""

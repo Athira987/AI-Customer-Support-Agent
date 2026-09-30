@@ -2,40 +2,176 @@
 [FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
 
 1. NovaBook Pro 15 (Laptop)
-- Display: 15.6-inch OLED 4K (3840x2160), 120Hz refresh rate, 500 nits brightness.
-- Processor: Intel Core Ultra 9 / AMD Ryzen 9 8000 Series.
-- RAM: 32GB LPDDR5X (Soldered, non-upgradable).
-- Storage: 1TB NVMe PCIe 4.0 SSD (expandable via secondary M.2 slot).
-- Battery & Charging: 84Wh battery offering up to 11 hours of standard office use. Ships with a 100W USB-C GaN fast charger.
-- Ports: 2x Thunderbolt 4 / USB-C, 1x USB-A 3.2 Gen 2, 1x HDMI 2.1, 1x 3.5mm headphone jack, 1x full-size SD card reader.
-- Audio: Quad stereo speakers with Dolby Atmos support.
-- Operating System: Windows 11 Pro pre-installed.
-- Retail Price: $1,499.00 USD.
+Category: NovaBook Series Laptop
+Retail Price: $1,499.00 USD
+Warranty: 1-Year Limited Hardware Warranty (NovaBook Series)
+
+Display:
+- 15.6-inch OLED 4K display (3840x2160 resolution)
+- 120Hz refresh rate
+- 500 nits peak brightness
+- 100% DCI-P3 color gamut, factory color-calibrated
+
+Processor Options:
+- Intel Core Ultra 9 185H (16-core, up to 5.1GHz boost)
+- AMD Ryzen 9 8945HS (8-core, up to 5.2GHz boost)
+
+Memory:
+- 32GB LPDDR5X RAM (soldered to motherboard, not user-upgradable)
+
+Storage:
+- 1TB NVMe PCIe 4.0 SSD (primary slot)
+- 1x empty M.2 2280 secondary slot for storage expansion (user-accessible)
+
+Battery & Charging:
+- 84Wh lithium-ion battery
+- Up to 11 hours of standard office use (web browsing, documents, video playback at 50% brightness)
+- Ships with a 100W USB-C GaN fast charger
+- Supports USB-C PD charging from any USB-C PD 65W or higher charger
+
+Ports:
+- 2x Thunderbolt 4 / USB4 Gen 3 (USB-C form factor, supports charging, display, and data)
+- 1x USB-A 3.2 Gen 2 (10Gbps)
+- 1x HDMI 2.1 (supports up to 8K@30Hz or 4K@144Hz external display)
+- 1x 3.5mm combo headphone/microphone jack
+- 1x Full-size SD card reader (UHS-II)
+
+Audio: Quad stereo speaker system with Dolby Atmos certification
+Operating System: Windows 11 Pro (pre-installed, activated)
+Webcam: 1080p IR webcam with Windows Hello facial recognition
+Weight: 1.85 kg (4.08 lbs)
+Dimensions: 355mm x 230mm x 16.5mm
+
+Colors Available: Midnight Black, Lunar Silver, Space Gray
 
 2. NovaPhone X12 (Smartphone)
-- Display: 6.7-inch Super AMOLED Display, 1-120Hz LTPO adaptive refresh rate.
-- Processor: NovaSilicon Bionic Octa-core chipset.
-- Storage Options: 128GB, 256GB, 512GB (No MicroSD card slot).
-- Camera System: Triple camera setup: 50MP main sensor (OIS), 12MP ultra-wide, 10MP 3x telephoto zoom. Front camera: 32MP.
-- Battery & Charging: 4,800mAh battery supporting 45W wired charging and 15W wireless charging. Charger is NOT included in the retail box; USB-C to USB-C cable is included.
-- Water Resistance: IP68 rating (submersible up to 1.5 meters in freshwater for up to 30 minutes).
-- Operating System: NovaOS 14 (based on Android 14).
-- Retail Price: $799.00 USD (128GB), $899.00 USD (256GB), $999.00 USD (512GB).
+Category: NovaPhone Series Smartphone
+Retail Price: $799.00 USD (128GB) | $899.00 USD (256GB) | $999.00 USD (512GB)
+Warranty: 1-Year Limited Hardware Warranty (NovaPhone Series)
+
+Display:
+- 6.7-inch Super AMOLED
+- 1-120Hz LTPO adaptive refresh rate (automatically adjusts to save battery)
+- 2400x1080 FHD+ resolution
+- Corning Gorilla Glass Victus 2 protection
+
+Processor: NovaSilicon Bionic Octa-core chipset (custom in-house)
+RAM: 12GB LPDDR5
+
+Storage Options:
+- 128GB, 256GB, or 512GB UFS 3.1 internal storage
+- No MicroSD card expansion slot
+
+Camera System:
+- Main: 50MP f/1.8 with Optical Image Stabilization (OIS)
+- Ultra-wide: 12MP f/2.2, 120° field of view
+- Telephoto: 10MP f/2.4 with 3x optical zoom
+- Front: 32MP f/2.0 for selfies and video calls
+
+Battery & Charging:
+- 4,800mAh lithium-ion battery
+- 45W wired fast charging (0 to 60% in approximately 30 minutes)
+- 15W wireless charging
+- 5W reverse wireless charging (can charge other Qi-compatible devices)
+- Important: A 45W charger is NOT included in the retail box. Only a USB-C to USB-C cable is included. The charger must be purchased separately.
+
+Connectivity:
+- 5G Sub-6GHz and mmWave support
+- Wi-Fi 6E (802.11ax)
+- Bluetooth 5.3
+- NFC (for contactless payments, Google Pay)
+
+Water Resistance: IP68 rating. Submersible up to 1.5 meters in freshwater for up to 30 minutes under IEC 60529 test conditions. Saltwater or chlorinated water exposure is not covered under IP68 and can cause corrosion damage.
+
+Operating System: NovaOS 14 (based on Android 14), guaranteed to receive 4 years of OS updates and 5 years of security patches from launch date.
+
+Biometrics: Under-display optical fingerprint sensor + face unlock
+Colors Available: Obsidian Black, Pearl White, Aurora Violet, Titanium Gray
 
 3. NovaSound ANC Elite (Wireless Over-Ear Headphones)
-- Audio Driver: 40mm Custom Titanium Dynamic Drivers.
-- Active Noise Cancellation: Hybrid Active Noise Cancellation with Transparency Mode and Wind Noise Reduction.
-- Battery Life: Up to 40 hours with ANC enabled; up to 55 hours with ANC disabled. Quick charge: 10 minutes of charging provides 5 hours of playback.
-- Connectivity: Bluetooth 5.3 with multipoint pairing (connect up to 2 devices simultaneously), 3.5mm auxiliary wired option.
-- Supported Codecs: LDAC, AAC, SBC.
-- Microphone: 6-mic array with AI beamforming voice isolation for phone calls.
-- Included in Box: NovaSound ANC Elite headphones, hard travel case, 3.5mm audio cable, USB-C to USB-A charging cable, airplane audio adapter.
-- Retail Price: $249.00 USD.
+Category: NovaSound ANC Headphones & Speakers
+Retail Price: $249.00 USD
+Warranty: 2-Year Limited Manufacturer Warranty (NovaSound ANC Series)
+
+Audio:
+- 40mm Custom Titanium Dynamic Drivers
+- Frequency response: 20Hz to 40kHz (Hi-Res Audio certified)
+- Supported codecs: LDAC (highest quality, up to 990kbps), AAC, SBC
+
+Active Noise Cancellation:
+- Hybrid ANC system using feedforward and feedback microphones
+- Three ANC modes: Active Noise Cancelling (High), Transparency Mode, ANC Off
+- Wind Noise Reduction technology
+
+Battery Life:
+- Up to 40 hours of continuous playback with ANC enabled
+- Up to 55 hours of continuous playback with ANC disabled
+- Quick Charge: 10 minutes of charging provides 5 hours of playback
+- Full charge time: approximately 2 hours via USB-C
+
+Connectivity:
+- Bluetooth 5.3
+- Multipoint pairing: simultaneously connect to 2 devices (e.g., laptop + phone). Audio seamlessly switches between devices.
+- 3.5mm auxiliary input for wired use (works even when battery is depleted)
+
+Microphone: 6-microphone array with AI beamforming voice isolation for clear phone calls
+
+What's in the Box:
+- NovaSound ANC Elite headphones
+- Hard shell travel case (fabric exterior)
+- 3.5mm to 3.5mm audio cable (1.2m)
+- USB-C to USB-A charging cable (1m)
+- Airplane audio adapter (dual 3.5mm)
+
+Folding Design: The ear cups fold flat and rotate for compact storage in the included case.
+Weight: 250g
 
 4. NovaTab Ultra 11 (Tablet)
-- Display: 11-inch IPS LCD 2.8K resolution (2880x1800), 144Hz refresh rate, stylus pen support.
-- Processor: Snapdragon 8s Gen 3.
-- RAM & Storage: 8GB RAM + 128GB Storage, or 12GB RAM + 256GB Storage.
-- Battery: 8,600mAh with 33W fast charging.
-- Stylus & Keyboard: NovaPen Stylus is sold separately ($69.00). Magnetic Smart Folio Keyboard sold separately ($119.00).
-- Retail Price: $449.00 USD.
+Category: NovaTab Tablets
+Retail Price: $449.00 USD (8GB + 128GB) | $549.00 USD (12GB + 256GB)
+Warranty: 1-Year Limited Hardware Warranty (NovaTab Series)
+
+Display:
+- 11-inch IPS LCD
+- 2.8K resolution (2880x1800)
+- 144Hz refresh rate
+- 600 nits peak brightness
+- Supports NovaPen active stylus with 4096 levels of pressure sensitivity
+
+Processor: Qualcomm Snapdragon 8s Gen 3
+RAM & Storage Options:
+- 8GB LPDDR5 RAM + 128GB UFS 3.1 storage
+- 12GB LPDDR5 RAM + 256GB UFS 3.1 storage
+- MicroSD card expansion: supported up to 2TB
+
+Battery: 8,600mAh with 33W fast charging (charger included in box)
+Operating System: NovaOS 14 for Tablets (based on Android 14 with tablet-optimized UI)
+
+Connectivity:
+- Wi-Fi 6E (802.11ax)
+- Bluetooth 5.3
+- Optional 5G model available (add $100.00 to base price)
+- USB-C 3.2 Gen 2 (supports video output to external displays)
+
+Accessories (Sold Separately — NOT included in box):
+- NovaPen Stylus: $69.00 USD (magnetic charging, attaches to side of tablet)
+- Magnetic Smart Folio Keyboard: $119.00 USD (transforms tablet into laptop form factor)
+
+Colors Available: Graphite Gray, Ivory White, Sage Green
+
+5. NovaBuds Pro (In-Ear True Wireless Earbuds)
+Category: NovaSound Audio Accessories
+Retail Price: $129.00 USD
+Warranty: 1-Year Limited Warranty
+
+Audio: 11mm dynamic drivers with passive noise isolation
+ANC: Hybrid Active Noise Cancellation with Transparency Mode
+Battery Life: 7 hours per charge (earbuds) + 21 additional hours from charging case = 28 hours total
+Charging: USB-C charging case; wireless charging case (Qi compatible) available separately
+Water Resistance: IPX5 (sweat and splash resistant, not submersible)
+Connectivity: Bluetooth 5.3, Multipoint pairing (2 devices)
+Fit: 3 sizes of silicone ear tips included (Small, Medium, Large)
+
+Important Return Note: NovaBuds Pro earbuds CANNOT be returned once the hygiene security seal on the ear tip packaging is broken, unless proven defective on arrival (DOA).
+
+What's in the Box: NovaBuds Pro earbuds, charging case, USB-C cable, 3 pairs of silicone ear tips (S/M/L)

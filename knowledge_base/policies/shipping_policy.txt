@@ -1,26 +1,72 @@
 # NovaTech Electronics - Shipping and Delivery Policy
 [FICTIONAL SAMPLE DOCUMENT FOR RAG KNOWLEDGE BASE]
 
-1. Shipping Speeds & Rates (Domestic US)
-NovaTech ships to all 50 US states, Puerto Rico, and APO/FPO military addresses:
-- Standard Shipping (3 to 5 Business Days): $4.99 flat rate. FREE for all orders totaling $50.00 or more before taxes.
-- Express 2-Day Shipping (2 Business Days): $14.99 flat rate. Available for all contiguous US orders placed before 2:00 PM EST.
-- Overnight Priority Delivery (1 Business Day): $24.99 flat rate. Guaranteed next business day delivery for orders placed Monday through Thursday before 1:00 PM EST.
+1. Domestic Shipping Options (United States)
+NovaTech ships to all 50 US states, Washington D.C., Puerto Rico, and APO/FPO military addresses. The following shipping options are available at checkout:
 
-2. Order Processing Cutoff Times
-- Orders placed Monday through Friday before 2:00 PM EST are processed and dispatched from our warehouse on the same business day.
-- Orders placed on weekends (Saturday, Sunday) or major federal holidays are processed on the following business day.
+a) Standard Shipping:
+   - Delivery Time: 3 to 5 business days after dispatch.
+   - Cost: $4.99 flat rate per order.
+   - Free Standard Shipping: Available automatically on all orders totaling $50.00 or more before taxes and fees. No coupon code required.
+
+b) Express 2-Day Shipping:
+   - Delivery Time: Guaranteed delivery within 2 business days after dispatch.
+   - Cost: $14.99 flat rate per order.
+   - Availability: Orders must be placed before 2:00 PM Eastern Standard Time (EST) on business days. Orders placed after 2:00 PM EST will be dispatched the next business day, adding 1 extra day.
+   - Available for all contiguous 48 US states only. Not available for Hawaii, Alaska, Puerto Rico, or APO/FPO addresses.
+
+c) Overnight Priority Delivery:
+   - Delivery Time: Guaranteed delivery on the next business day after dispatch.
+   - Cost: $24.99 flat rate per order.
+   - Availability: Orders must be placed Monday through Thursday before 1:00 PM EST. Orders placed on Friday after 1:00 PM EST will not be dispatched until Monday.
+   - Not available for weekends, federal holidays, Hawaii, Alaska, Puerto Rico, or APO/FPO addresses.
+
+2. Order Processing & Dispatch Times
+- Orders placed Monday through Friday before 2:00 PM EST: Processed and dispatched from the warehouse on the same business day.
+- Orders placed Monday through Friday after 2:00 PM EST: Processed and dispatched the following business day.
+- Orders placed on Saturday or Sunday: Processed and dispatched on the following Monday (or next business day if Monday is a federal holiday).
+- Orders placed on US federal holidays: Processed and dispatched on the next business day.
 
 3. International Shipping
-- NovaTech currently ships internationally to Canada, the United Kingdom, the European Union, Australia, and Japan.
-- International Standard Shipping takes 7 to 14 business days ($19.99 flat rate).
-- International Express Shipping takes 3 to 5 business days ($39.99 flat rate).
-- Customs duties, import taxes, and VAT are calculated and collected at checkout (DDP - Delivered Duty Paid), so no unexpected fees are charged upon delivery.
+NovaTech currently ships internationally to the following countries and regions only: Canada, United Kingdom, European Union member states, Australia, and Japan. International shipping is not available to other countries at this time.
 
-4. Package Tracking & Signature Confirmation
-- Once an order departs our facility, a tracking number is automatically emailed to the customer.
-- Orders valued over $500.00 (such as NovaBook Pro laptops or NovaPhone purchases) require an adult signature upon delivery for fraud and theft prevention.
+International Shipping Options:
+a) International Standard Shipping:
+   - Delivery Time: 7 to 14 business days after dispatch (varies by destination country and customs clearance).
+   - Cost: $19.99 flat rate per order.
 
-5. Damaged, Lost, or Stolen Packages
-- If a package arrives visibly damaged, customers must report it to NovaTech Support within 48 hours of delivery with photographic evidence.
-- If tracking shows "Delivered" but the package cannot be found, customers should wait 24 hours (as carriers sometimes mark packages early), then contact NovaTech Support to open a carrier claim investigation.
+b) International Express Shipping:
+   - Delivery Time: 3 to 5 business days after dispatch.
+   - Cost: $39.99 flat rate per order.
+
+Customs & Import Duties:
+- NovaTech ships all international orders on a DDP (Delivered Duty Paid) basis.
+- All customs duties, import taxes, and Value Added Tax (VAT) are calculated and collected at checkout.
+- The customer will NOT receive any unexpected customs fees or import charges upon delivery. What you pay at checkout is the final total.
+
+4. Package Tracking
+- A tracking number is automatically generated and emailed to the customer's registered email address once the order departs the NovaTech warehouse.
+- Tracking is available in real-time through the carrier's website (FedEx, UPS, or USPS depending on the shipping method selected).
+- Tracking information may take up to 12 hours to update after dispatch.
+- Customers can also view their tracking status by logging into their NovaTech account under "Order History."
+
+5. Signature Confirmation Requirement
+- Orders with a total value exceeding $500.00 USD require an adult signature upon delivery.
+- Products requiring signature include: NovaBook Pro 15 laptops ($1,499.00), NovaPhone X12 smartphones ($799.00 and above), and any order whose cart total exceeds $500.00.
+- If no one is available to sign, the carrier will leave a delivery notice and attempt redelivery up to 2 more times before returning the package to the local carrier facility for customer pickup.
+
+6. Damaged Packages Upon Delivery
+- If a package arrives visibly damaged (crushed box, torn packaging, visible cracks), the customer must:
+  Step 1: Take clear photographic evidence of the damaged packaging and product before opening further.
+  Step 2: Report the damage to NovaTech Support within 48 hours of the delivery timestamp.
+  Step 3: NovaTech will file a carrier claim on the customer's behalf and provide a prepaid return shipping label.
+  Step 4: The customer will receive either a full refund or a free replacement unit — customer's choice.
+- Damage reported after 48 hours of delivery may not be eligible for a transit damage claim and may instead be processed as a warranty or return case.
+
+7. Lost or Missing Packages
+- If the tracking status shows "Delivered" but the package cannot be located:
+  Step 1: Wait 24 hours. Carriers sometimes scan packages as "Delivered" up to 24 hours before actual delivery.
+  Step 2: Check all delivery locations around your address (porch, mailbox, neighbor's porch, building reception desk).
+  Step 3: If still not found after 24 hours, contact NovaTech Support to open a formal carrier claim investigation.
+  Step 4: Carrier investigations typically take 3 to 5 business days. NovaTech will notify you of the outcome.
+  Step 5: If the carrier confirms the package is lost, NovaTech will ship a replacement at no additional charge.
