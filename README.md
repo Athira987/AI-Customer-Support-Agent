@@ -12,7 +12,15 @@ An intelligent, full-stack AI Customer Support Agent powered by **Retrieval-Augm
 The system retrieves relevant knowledge-base documents from a fictional NovaTech Electronics catalog, generates strictly grounded responses with source citations, and intelligently escalates unsupported or low-confidence queries to human support specialists. Built entirely without heavy black-box frameworks (no LangChain or LlamaIndex) to ensure complete architectural control over vector retrieval, similarity thresholds, prompt grounding, and fallback escalation.
 
 ---
+## 📸 Project Screenshots
 
+<p align="center">
+  <img src="screenshots/01-home.png" width="32%" alt="NovaTech Support AI home screen">
+  <img src="screenshots/02-rag-response.png" width="32%" alt="RAG-based support response">
+  <img src="screenshots/03-human-escalation.png" width="32%" alt="Human escalation workflow">
+</p>
+
+---
 ## ✨ Key Features
 
 - **⚡ FastAPI Backend**: High-performance asynchronous REST API with Pydantic v2 schema validation, structured error handling, and interactive OpenAPI documentation.
